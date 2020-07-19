@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>MM
+</title>
+</head>
+<link rel="stylesheet" type="text/css" href="jio.css">
+<link rel="stylesheet" type="text/css" href="slide.css">
+<body>
+<ul class="nav">
+  <li><a href="home.html">HOME</a></li>
+  <li><a href="plan.html">PLAN</a></li>
+  <li><a href="device.html">DEVICE</a></li>
+  <li><a href="app.html">APPS</a></li>  
+ <li><a href="#whyjio">WHY JIO</a></li>
+ <li><a href="#support">SUPPORT</a></li>
+ <li><a href="login.html">SIGN IN</a></li>
+ <li><a href="#quickpay"></a>QUICK PAY</li></ul>
+</div>
+
+
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="jioo.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="desktop.jpg" style="width:100%">
+  </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="website.jpg" style="width:100%">
+  </div>
+
+<a class="prev" onclick="plusSlides(-1)">?</a>
+<a class="next" onclick="plusSlides(1)">?</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<br>
+
+
+<div><img src="my.jpg" style="width:100%"></div><br><br>
+
+<div class="images">
+<img src="home.png" height="400px" width="1420px">
+</div><br><br><br>
+
+<div class="images">
+<img src="plan.png" height="400px" width="1350px">
+</div>
+
+<div class="images">
+<img src="map.png" height="400px" width="1350px">
+</div>
+
+<div class="images">
+<img src="device.png" height="400px" width="1350px">
+</div>
+
+<div class="images">
+<img src="details.png" height="400px" width="1350px">
+</div>
+</body>
+</html>
